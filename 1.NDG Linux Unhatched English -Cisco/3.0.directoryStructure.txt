@@ -1,0 +1,6 @@
+directory structure 
+
+/	// root 
+
+
+~	// equivalent with  /home/userName (user home directory)  ex.  ~ == /home/florin

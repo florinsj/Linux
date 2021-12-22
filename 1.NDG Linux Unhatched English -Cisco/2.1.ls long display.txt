@@ -1,0 +1,34 @@
+ls -l  //display content with full information about directory and files
+
+
+
+
+ex.  ls -l 
+-rw-r--r-- 1 sysadmin sysadmin 647 Dec 20  2017 hello.sh
+
+1.first character - type    
+
+"-"= regular file
+"d"= directory
+"l"= symbolic link --> points to another file
+"s"=socket --> allows for communications between processes
+"p"=pipe  --> allows for communications  between processes
+"b"= block file --> used for communications with hardware
+"c"= character file -->used for communications with hardware
+
+
+
+2.next 9 characters =permissions field  3 chars for owner, 3 chars for group owner, 3chars for the rest
+	r=read
+	w=write
+	x=execute
+
+3.number of hard links -- number of how many hardlinks points to respective file
+
+4.user owner
+5.group owner
+6.file size
+7.timestamp
+8.filename
+
+ 

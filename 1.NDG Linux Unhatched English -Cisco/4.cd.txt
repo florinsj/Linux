@@ -1,0 +1,25 @@
+cd 
+
+cd 	// change directory
+
+syntax:
+cd [options] [path]
+
+cd / 	// change directory to  / (root)
+
+cd /home/sysadmin	//change directory to sysadmin home directory
+
+
+absolute path	// full path from root(/)  ex. /home/user1
+relative path	// path from current directory    ex. /user1 (supose that we are in current working directory  home)
+
+cd media		// change directory to media (using relative path - suposing that current working directory is root)
+cd /home/user1		// change directory to user1 (using absolute path )
+
+
+
+cd .		//  . = same directory , cd . =change directory to same directory
+cd ..		// change directory to parrent directory
+cd ~		// change directory to home 
+cd /		// change directory to root
+

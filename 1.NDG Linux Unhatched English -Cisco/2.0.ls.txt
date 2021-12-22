@@ -1,0 +1,19 @@
+ls
+ls	// list content of a directory 
+ls -l  	// -l=long display (display also information about fileType,permissions,owner,groupOwner, fileSize,timeStamp,filename)
+
+Sorting 
+
+ls	// by default  display content sorted in alphabetical order
+
+ls -r 	// display content in reverse alphabetical order
+ls -lr
+
+
+ls -t	// display content ordered by timestamp
+ls -lt
+
+ls -s	// display content ordered by file size
+ls -ls
+
+	

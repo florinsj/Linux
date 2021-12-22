@@ -1,0 +1,14 @@
+sudo
+
+sudo	// allows a user to execute a command as another user
+ 
+
+
+Syntax:
+sudo [options] [command]
+
+sudo command		  // allow current user to run command as root
+
+
+sudo -u [user] [command]  // allow current user to run command as another user  
+			  // Ex. sudo -u user1 command1-allow current user to run command as user1

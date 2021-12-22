@@ -1,0 +1,14 @@
+su
+
+su		// allow to temporary act as another user
+
+
+Syntax :
+su [options] [username]
+
+su 		// login as root user
+su user1	// login as user1
+
+su is used for preventing regular users from executing these commands helps to protect the system 
+
+exit		// logout from current login
