@@ -1,0 +1,32 @@
+chmod   ( change the modes of access)
+
+//used to change the permisssions of a file or directory
+//only the root user or owner user can change permissions to a file/directory
+
+// 2 method of change permissions : symbolic(one set of time) and octal(all three sets of permissions at once)
+
+Syntax
+
+chmod [<SET><ACTION><PERMISSIONS]..FILE
+
+<SET> can be  
+u	-User	- the user who owns the file
+g	-Group	- the group who owns the file
+o	-Others	- anyone other than the user owner or member in group owner
+a	-All	- user + group + others
+
+<ACTION> can be :
++	-add permission if necesarry
+-	-remove permission if necesary
+=	-specify the exact permission
+
+<PERMISSIONS> can be :
+
+r	- read
+w	- write
+x	- execute
+
+Ex: chmod u+x hello.sh 	- assign x(execute permission) to owner user for file hello.sh
+
+
+	./hello.sh	- execute hello.sh from current directory  (.=current directory   ./hello.sh)
