@@ -1,0 +1,29 @@
+cat	
+
+cat [OPTIONS] [FILE]
+
+	// concatenate
+	// used to quickly view the content of small files
+	// used for small files where the output don't require scrolling
+	// cat will output all the content without pause
+	// for larger files use   "more" and "less" comands
+
+Ex. cat hello.sh
+
+
+
+
+head [OPTIONS] [FILE]
+
+	// used to preview a select number of lines from the top of the file
+	// -n option - specify the number of lines 
+
+Ex. head -n 3 hello.sh	// display first 3 lines of  hello.sh file
+
+
+tail [OPTIONS] [FILE]
+
+	// used to preview a select number of lines from the bottom of the file
+	// -n option - specify the number of lines
+
+Ex. tail -4 hello.sh	// display the last 4 lines of hello.sh file

@@ -1,0 +1,14 @@
+chown 
+
+// change the ownership of a file
+// requires administrative access
+// regular user cannot change ownership of a file even of one of their own files to another user 
+// group ownership can be changed by root user or by owner of the file
+
+Syntax :
+chown [OPTIONS][OWNER] FILE
+
+
+ex. sudo chown root hello.sh   // change ownership to root owner of file hello.sh
+
+
