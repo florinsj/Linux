@@ -1,0 +1,19 @@
+mv	// move a file from a location to another
+	// renaming a file
+
+mv SOURCE DESTINATION
+
+
+Ex move:
+	
+	mv people.csv Work				// move file people.csv in Word directory
+	mv numbers.txt letters.txt alpha.txt School	// move specified files to School directory
+
+
+Ex rename:
+
+	mv animals.txt zoo.txt		// animals.txt to zoo.txt  (move animals.txt to same directory but with another name)
+
+Permissions:
+
+	mv needs write and eXecute to both destination directories
