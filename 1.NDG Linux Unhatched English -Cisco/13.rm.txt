@@ -1,0 +1,22 @@
+rm	// remove
+	// delete files and directories
+	// permanent delete (different from desktop oriented OS - no recycle bin, no trash can)
+
+rm [OPTIONS] FILE
+
+	
+
+
+// regular files can be removed without any options
+	
+	Ex.:	rm linux.txt	// permanent delete linux.txt
+
+
+// directories can be removed with recursive option -r or -R option. this will delete entire directory with all included files and subdirectories
+
+	Ex:	rm -r Work	// permanent delete of Work directory (delete all included files and subdirectories)
+
+
+
+Permissions
+	// to delete a file or directory a user must have write and eXecute permission to directory
