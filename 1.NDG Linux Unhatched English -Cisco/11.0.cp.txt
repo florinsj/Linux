@@ -1,0 +1,13 @@
+cp 	// copying files
+
+Syntax: 
+cp [OPTIONS] SOURCE DESTINATION
+
+Ex. cp /etc/passwd .   // copy passwd to current directory
+
+permissions 
+
+// in order to copy a file it is necesarry to have:	execute permission to access the source directory and read permission for source file
+							write and execute permission on destination folder
+
+// typicaly user have always write and execute permission in /tmp and /home directory

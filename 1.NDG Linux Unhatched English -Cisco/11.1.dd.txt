@@ -1,0 +1,25 @@
+dd	// copying files or entire partitions at the bit level
+
+Syntax:
+dd [OPTIONS] OPERAND
+ 
+	// can be used to clone or delete(wipe) entire disks or partitions
+	// can be used to copy raw data to cd or removable devices
+	// it can backup and restore MBR
+	// it can create a file with specific size filled with binary zeros wich can be used as swap file
+
+
+Ex : dd if=/dev/zero of=/tmp/swapes bs=1M count=50
+
+	if	= input file to read from
+	of	= outut file to be written
+	bs	= block size (default is in bytes but we can use suffixes to specify other units K, M, G, T)
+	count	= the number of blocks to be read from the input file
+
+  	// read from zero file (special file containing unlimited number of zeros) 50 blocks (block size=1megabyte) and output to swapes file
+
+
+
+ !! no bs or count needs when copying over entire devices (ex: clone one hdd to another hdd)
+
+Ex: dd if=/dev/sda of=/dev/sdb 	// copy entire sda to sdb
