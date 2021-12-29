@@ -1,0 +1,6 @@
+grep 	// filter input
+	// search input and return lines wich contain a match to a given pattern
+
+grep [OPTIONS] PATTERN [FILE]
+
+Ex. grep sysadmin passwd	// will return the line wich contain sysadmin from file passwd
