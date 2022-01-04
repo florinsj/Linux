@@ -1,0 +1,67 @@
+
+// regular expressions are patterns that only certain commands are able to interpret
+// reg expressions can be expanded to match certain sequences of chars in text
+
+Examples to demonstrate the power of regular expressions used with grep command
+
+  grep sysadmin passwd	// list all the  lines from passwd file, that contains the word sysdadmin
+
+  grep 'root' passwd	// list all the lines from passwd file, that contains the word root . it is better to use quotes wich prevents misinterpreting
+
+
+-----------------------------------------------
+
+  ^	// first anchor char is used to ensure that a pattern appears at the beginning of the line. ^ must be the first char in the pattern
+
+	grep '^root' passwd  // list all the lines from passwd file that starts with root
+
+
+-----------------------------------------------
+
+
+
+  $	// the second anchor char is used to ensure that a pattern appears at the end of the line. $ must be the last char in the pattern
+
+	grep 'r$' alpha-first.txt	// find the lines that ends with r in alpha-first.txt
+  
+-----------------------------------------------
+
+
+  .	// match any single char except new line char
+	// ex: r..f would find any line that contain the letter r followed by exactly two chars and then the letter f
+
+	grep 'r..d' red.txt	// find all the lines from red.txt that contains 4 letters word starting with r and ending with d
+
+	grep '....' red.txt 	// find all the lines from red.txt that containts at least 4 chars
+-----------------------------------------------
+
+  [ ]	// match a single char from a list or range of possible chars contained within the brakets
+
+	grep [0123456789] profile.txt	// find all the lines which have a number in them
+	grep [0-9] profile.txt		// find all the lines which have a number in them
+
+
+	grep [^0-9] profile.txt		// find all the lines which contain any non numeric chars /^ inserted before an pattern, negate that pattern	
+					// find all the lines wich contain also non numeric chars
+
+
+-----------------------------------------------
+  '[.]'	// . match any chars but placed in brakets will match itself
+
+	grep '[.]' profile.txt 	// find all the lines that which contains '.' char (dot char)
+
+
+ -----------------------------------------------
+
+  *	// match zero or more occurences of a char or pattern preceding it
+	// ex. e* would match zero or more occurences of letter e
+
+ 	grep 're*d' red.txt	// will match zero or more occurences of letter e
+	
+	// it is also possible to match zero or more occurences of a list of chars by utilizing the square brakets
+
+	grep 'r[oe]*d'	// will match zero or more occurences of 'o' or 'e' chars in specified pattern
+
+	!!! when used with only one char  * isn't helpful.  *e  *b * *z ...all this will match every string in the file
+	!!! when no file is specified the grep command will read from standard input (keyboard)
+

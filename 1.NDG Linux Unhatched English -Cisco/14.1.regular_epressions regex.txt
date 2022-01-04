@@ -1,0 +1,30 @@
+
+regex	// regular expressions
+
+regular expressions have two forms :	basic 		(most commands can interpret basic forms)
+					extended	(not all commands can interpret extended forms)
+
+Basic regex characters:
+
+.	any one single character
+[ ]	any one specified character
+[^ ] 	not the one specified character
+*	zero ore more of the previous character
+^ 	if first char in the pattern, then pattern must be at the beginning of the line to match, otherwise just a literal ^
+$	if last char in the pattern, then pattern must be at the end of the line to match, otherwise just a literal $
+
+
+Extended regex characters
+
+	used with egrep  
+	used with -E option and grep 
+
++	one or more of the previous pattern
+? 	the precedenting pattern is optional
+{ }	specify min, max or exact matches of the previous pattern
+|	alternation	- a logical or
+( ) 	used to create groups
+
+
+
+
