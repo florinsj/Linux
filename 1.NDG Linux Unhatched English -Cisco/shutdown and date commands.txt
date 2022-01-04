@@ -1,0 +1,23 @@
+shutdown	// system will be brought down in a safe way
+		// all logged-in users are notified within 5 minutes, new logins are prevented
+
+shutdown [OPTIONS] TIME [MESSAGE]
+
+	!!! requires administrative access
+
+
+  shutdown now	// shutdown now
+
+---------------------------------------
+
+date	//check the time
+
+
+---------------------------------------
+
+shutdown 20:34	// shut down the system at 20:34
+
+---------------------------------------
+
+shutdown +1 "Goodbye World!" 	// shutdown after 1 hour and display a message
+
