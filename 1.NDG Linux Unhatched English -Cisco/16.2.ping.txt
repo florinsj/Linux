@@ -1,0 +1,21 @@
+ping  // used to verify connection between two computers
+      // it sends packets to another machine in network.if received response a connection is possible
+
+
+Syntax : ping [options] [destination_ip] 
+         ping [options] [hostname]
+
+
+ex. ping www.google.com
+ex. ping 192.168.0.1
+// without any options ping will send unlimited packets until the break command CTRL + c
+
+
+
+// option  -c [number]  limit the iteration of ping to number times
+
+ex. ping -c 4 192.168.1.2   // will send 4 packets to specified destination_ip
+
+
+/* ping can fail if the host is unreachable or if the destination administrators configure their
+machines or even entire network to not respond to ping  */
