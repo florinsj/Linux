@@ -1,0 +1,23 @@
+ // running a command result to something calles a process
+ // processes are executed with privileges of the user who executes the command ==> limited by user
+
+ // regular user cannot control processes of another user
+ // root user can control any user processes
+
+
+ps // list processes
+
+Syntax :    ps [options]
+
+ex. ps  // will list the current running processes in the current terminal
+        // aditional info for each process :
+        // PID = proces ID - unique by proces1
+        // TTY = the name of the terminal where the process is running
+        // TIME = the total amount procesor time used by process
+        // CMD = command used to start the process
+
+
+    ps -f   // will list the current running processes in the current terminal  with more details
+
+    ps -e // will list all the running processes on the system
+
