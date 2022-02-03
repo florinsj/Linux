@@ -1,0 +1,32 @@
+passwd  // used to update a user's password
+        // user can change/update  only their own passwords
+        // root can update/change the password of any user
+
+
+Syntax: passwd [options] [user]
+
+---------------------------------------------------------------------------------------------------
+
+passwd  // will prompt to change passwd for current user
+
+---------------------------------------------------------------------------------------------------
+
+su root         // login as root
+passwd user22   // change passwd for user22
+
+---------------------------------------------------------------------------------------------------
+
+passwd -S [user]    // show status information about user password
+passwd -S           // show status information about current user
+
+
+sysadmin P 12/20/2017 0 99999 7 -1
+
+    field1: user
+    field2: P=usable passwd or L=locked passwd or NP=no passwd
+    field3: the date when the passwd was last changed
+    field4: minimum number of days that must pass before the current passwd can be changed
+    field5: maximum days number of days remaining to passwd expiry
+    field6: the number of days that user account remains active after passwd expiry
+
+---------------------------------------------------------------------------------------------------
