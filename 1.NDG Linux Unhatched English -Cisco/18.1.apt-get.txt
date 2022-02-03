@@ -1,0 +1,37 @@
+// package management is a system by wich software can be installed, updated, queried or removed
+// in Linux there is many package management systems but most popular from Red Hat and Debian
+
+  dpkg  // manangement tool, tricky for beginners
+
+
+apt-get // front end program to dpkg, easier for users
+        // need sudo prefix (admin privileges)
+
+
+----------------------------------------------------------------------------------------
+sudo apt-get update     // refresh the list of available packages( update cache )
+
+----------------------------------------------------------------------------------------
+sudo apt-cache search [keywords]    // search keywords in packages
+ex. sudo apt-cache search web server // search packages asociates with keywords 'web server'
+
+----------------------------------------------------------------------------------------
+sudo apt-get install [package] //install a package if not installed or update it if newer vers found
+ex. sudo apt-get install cowsay // install cowsay wich is a configurable talking cow
+
+----------------------------------------------------------------------------------------
+update all the packages from the system :
+    step1: sudo apt-get update   // update the cache with all the available packages
+    step2: sudo apt-get upgrade  // all the packagesa and dependecies will be updated
+
+----------------------------------------------------------------------------------------
+remove/purge packages from system
+
+sudo apt-get remove [package]  // remove a package from system but keep the configuration files
+ex. sudo apt-get remove cowsay 
+
+
+sudo apt-get purge [package]  // remove completely a package from system
+ex. sudo apt-get purge cowsay
+
+
