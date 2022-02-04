@@ -1,0 +1,5 @@
+echo    //  print output to terminal
+
+echo [message]
+
+ex: echo "Hello World!"
