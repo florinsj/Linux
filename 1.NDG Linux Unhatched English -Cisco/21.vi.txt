@@ -12,7 +12,7 @@ vi  // text editor available on every Linux distribution in world (CLI and GUI)
 
 ---------------------------------------------------------------------------------------------
 
-vi [filename]  = edit or create a filenameq
+vi [filename]  = edit or create a file named [filename]
 ---------------------------------------------------------------------------------------------
  
 3 modes in vim : command mode, insert mode, ex mode
@@ -23,7 +23,7 @@ vi [filename]  = edit or create a filenameq
 command mode    // initialy program start in command mode
                 // used to type commands such those for move around text, manipulate text
                 // used for access the other two modes
-                // to return to command anytime press emacs
+                // to return to command anytime press ESC
 
                 
 ---------------------------------------------------------------------------------------------

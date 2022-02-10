@@ -10,7 +10,7 @@ cat [OPTIONS] [FILE]
 
 Ex. cat hello.sh
 
-
+---------------------------------------------------------------------------------------------
 
 
 head [OPTIONS] [FILE]
@@ -19,7 +19,7 @@ head [OPTIONS] [FILE]
 	// -n option - specify the number of lines 
 
 Ex. head -n 3 hello.sh	// display first 3 lines of  hello.sh file
-
+---------------------------------------------------------------------------------------------
 
 tail [OPTIONS] [FILE]
 

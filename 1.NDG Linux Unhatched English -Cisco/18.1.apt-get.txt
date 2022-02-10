@@ -22,7 +22,7 @@ ex. sudo apt-get install cowsay // install cowsay wich is a configurable talking
 ----------------------------------------------------------------------------------------
 update all the packages from the system :
     step1: sudo apt-get update   // update the cache with all the available packages
-    step2: sudo apt-get upgrade  // all the packagesa and dependecies will be updated
+    step2: sudo apt-get upgrade  // all the packages and dependencies will be updated
 
 ----------------------------------------------------------------------------------------
 remove/purge packages from system

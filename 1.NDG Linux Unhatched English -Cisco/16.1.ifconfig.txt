@@ -3,10 +3,12 @@ ifconfig    // interface configuration
 
 Syntax: ifconfig [options]
 
+---------------------------------------------------------------------------------------------
 
 iwconfig    // similar to ifconfig but dedicated to wireless interfaces
 
+---------------------------------------------------------------------------------------------
 ex: ifconfig    // display info about network configuration 
                 // eth0 = primary network device
-                // lo = loopback device = specia network device used when system send data to itself
+                // lo = loopback device = special network device used when system send data to itself
                 

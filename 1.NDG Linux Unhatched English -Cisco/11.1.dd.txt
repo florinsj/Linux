@@ -11,12 +11,13 @@ dd [OPTIONS] OPERAND
 
 Ex : dd if=/dev/zero of=/tmp/swapes bs=1M count=50
 
-	if	= input file to read from
-	of	= outut file to be written
-	bs	= block size (default is in bytes but we can use suffixes to specify other units K, M, G, T)
-	count	= the number of blocks to be read from the input file
+if	= input file to read from
+of	= outut file to be written
+bs	= block size (default is in bytes but we can use suffixes to specify other units K, M, G, T)
+count	= the number of blocks to be read from the input file
 
-  	// read from zero file (special file containing unlimited number of zeros) 50 blocks (block size=1megabyte) and output to swapes file
+/* read from zero file (special file containing unlimited number of zeros) 
+50 blocks (block size=1megabyte) and output to swapes file */
 
 
 
