@@ -1,0 +1,170 @@
+vi
+    // vi  = text editor
+    // vim = improved vi (vim has additional features)
+    // nano = tiny text editor
+    // emacs= masive text editor
+
+---------------------------------------------------------------------------------------------
+
+vi  // text editor available on every Linux distribution in world (CLI and GUI)
+    // pronounced "vee eye" editor
+    // in reality most Linux distribution don't include original vi but improved vi = vim
+
+---------------------------------------------------------------------------------------------
+
+vi [filename]  = edit or create a filenameq
+---------------------------------------------------------------------------------------------
+ 
+3 modes in vim : command mode, insert mode, ex mode
+---------------------------------------------------------------------------------------------
+
+1.COMMAND MODE
+
+command mode    // initialy program start in command mode
+                // used to type commands such those for move around text, manipulate text
+                // used for access the other two modes
+                // to return to command anytime press emacs
+
+                
+---------------------------------------------------------------------------------------------
+
+command mode -- motions
+
+h   // move left one char
+l   // move right one char
+j   // move down one line
+k   // move up one line
+// since the upgrade to vim it is possible to use also the arrows keys up-down-left-right
+ 
+w   // one word forward
+b   // one word back
+
+^   // beginning of the line
+$   // end of line
+
+// all the motions can be prefixed with a number to indicate how many times to perform movement
+
+ex:
+    5h  // move the cursor 5 chars to left
+    3w  // move the cursor 3 words to right(forward)
+
+---------------------------------------------------------------------------------------------
+ 
+command mode -- moving to specified line
+
+[number] G     // moving the cursor to specified number line
+CTRL+G         // show the line which the cursor is currently on 
+
+
+gg  or  1G  // moving the cursor to first line
+G           // moving the cursor to last line
+nG          //moving the cursor to line n(equivaent with :n from ex mode)
+
+5G         // moving the cursor to 5 line
+10G        // moving the cursor to 10 line
+
+ZZ          // save and exist   ( equivalent with :wq from ex mode)
+
+---------------------------------------------------------------------------------------------
+command mode actions
+
+d       // delete(cut)
+y       // yank (copy)
+p|p     // put  (paste)
+
+Syntax:
+    action [count] motion
+    [count] action motion
+
+---------------------------------------------------------------------------------------------
+
+delete  // removes indicate text from page and save it into the buffer(windows clipboard)
+
+ex.
+
+dd  // delete current line
+3dd // delete next 3 lines
+dw  // delete next word
+d3w // delete next 3 words
+d4h // delete 4 chars to the left
+
+---------------------------------------------------------------------------------------------
+
+change  // similar to delete,text is removed and inserted to buffer.
+        // the program is switched to insert mode to allow immediate changes to text\
+
+cc      // change current line
+cw      // change current word
+c3w     // change next 3 words
+c5h     // change five chars to left
+
+---------------------------------------------------------------------------------------------
+
+yank    // places content into the buffer without deleting it
+
+yy      // yank current line
+3yy     // yank next 3 lines
+yw      // yank next word
+y$      // yank to the end of line
+
+---------------------------------------------------------------------------------------------
+
+put     // places the text saved in buffer before or after cursor position
+
+p       // put(paste) after cursor (lowerCase p)
+P       // put(paste) before cursor (higher case P)
+
+---------------------------------------------------------------------------------------------
+
+Searching in vi
+
+/[searchText]   // search forward from the current position
+?[searchText]   // search backward from the current position
+
+n       // next match
+N       // previous match
+---------------------------------------------------------------------------------------------
+
+2.INSERT MODE
+
+insert mode
+
+// used to insert text in document
+
+a   // enter insert mode after cursor
+A   // enter insert mode at the end of the line
+i   // enter insert mode before cursor
+I   // enter insert mode at the beginning of the line
+o   // enter insert mode on a blank line after cursor
+O   // enter insert mode on a blank line before cursor
+
+---------------------------------------------------------------------------------------------
+3. EX MODE
+
+ex mode
+
+/* 
+- originally the vi editor was called ex editor
+- vi was the abbreviation for visual command in ex editor to visual mode
+- in the original normal mode the ex editor only allowed user to see and modify 1 line at time
+- since users preferred the visual mode ,ex program was linked to vi file so users can start
+ex directly in visual mode
+- actualy the program file was renamed to vi and the ex editor beacame a link that pointed to
+vi editor
+- when ex mode in vi it is possible to view,change settings as well commands like opening,
+saving or aborting changes to a file
+- to enter in ex mode press  ":"
+
+ */
+
+:w              // write the current file to the filesystem
+:w filename     // save a copy of current file as filename
+:w!             // force writing to the current file
+:n              // go to line number n
+:e filename     // open filename
+:q              // quit if no changes made to file
+:q!             // quit without saving changes to file
+:wq             // save and quit  ( equivalent with ZZ from command mode)
+
+
+
