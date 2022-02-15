@@ -1,0 +1,82 @@
+// there are hundred of Linux distributions, but commands remain very similar
+
+Red Hat
+
+Red Hat // simple distribution that introduces Red Hat Package Manager (RPM)
+
+Red Hat Enterprise Linux (RHEL) // server applications, paid 
+
+Fedora Project  // sponsored by Red Hat, personal desktop version build on enterprise foundation
+
+CentOS  // all the RHEL packages recompiled and given for free 
+        // (large compatible with RHEL,integrate newer software)
+
+Scientific Linux    // similar to CentOS (large compatible with RHEL,integrate newer software)
+                    // based on Red Hat, scientific computation
+                    // used with particle accelerators , including CERN
+
+---------------------------------------------------------------------------------------------------
+
+SUSE
+
+SUSE    // derivated from Slackware
+        // similarities to RHEL
+
+SUSE Linux Enterprise   // contains proprietary code, sold as a server
+openSUSE                // free version with multiple desktop packages (similar to CentOS and Mint)
+
+---------------------------------------------------------------------------------------------------
+Debian
+
+Debian  // result of comunity effort, promotes the use of open source software
+        // adherence with standards
+        // has own package management based on .deb files
+
+
+Ubuntu  // most popular Debian derived distribution
+        // creation of Canonical company (Canonical makes money by providing support)
+        // has several variants : desktop, server and various specialized applications
+        // provide LTS version - kept up to date 3years-desktop and 5years-server
+        // LTS term = long term support
+
+
+Linux Mint  // was started as fork of Ubuntu Linux
+            // relying upon Ubuntu repositories
+            // free but some versions with proprietary code 
+
+
+Raspbian    // used on Raspberry PI
+            // based on Debian versions for ARM 
+            // official and recomended version is developed by Raspberry PI foundation
+
+Kali Linux  // Debian-derrived Linux distribution 
+            // designed for digital forensics and penetration testing
+            // mantained and founded by Offensive Security
+            // has around 600 penetration-testing tools
+
+KNOPPIX     // Debian-derived OS designed to run directly form CD/DVD or USB flash derived
+            // can also be installed on hard drive 
+            // free and open source but include also proprietary software
+---------------------------------------------------------------------------------------------------
+
+Android
+
+Android // sponsored by Google, most popular Linux distribution
+        // fundamentally different from its counterparts
+        // uses Dalvik virtual machine with Linux = robust platform for mobile devices
+        // incompatible with desktop Linux distribution (lacks of traditional packages GNU, Xorg,etc)
+        // incompatibility = Red Hat,Ubuntu users cannot download software from Google Play
+        // incompatibility = terminal Android emulator lacks many of commands of its Linux counterparts
+        // to enable Linux commands in Android use BusyBox
+
+    (lacks=lipsuri, counterparts=omologi)
+
+---------------------------------------------------------------------------------------------------
+
+Linux From Scratch (LFS) 
+
+// more a learning tool than a distribution
+// online book and source code step by step instructions for build a cusotom distribution
+// users can modify the aspect of the OS and learn how all pieces works together
+// good for build and embedded system project
+
